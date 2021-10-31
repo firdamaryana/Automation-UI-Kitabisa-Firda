@@ -1,0 +1,13 @@
+${test_number};${test_type};${full_name};${phone_or_email};${notes_berdoa};${expected_display};${test_desc}
+0;N;;08561736527;Automation Firda;Silakan isi nama lengkap kamu;send blank full_name
+1;N;abc123;08561736527;Automation Firda;Nama hanya boleh mengandung huruf, titik, spasi, dan tanda petik satu (');send alphabet full_name
+2;N;0;08561736527;Automation Firda;Nama hanya boleh mengandung huruf, titik, spasi, dan tanda petik satu (');send 0 full_name
+3;N;abc123!@#;08561736527;Automation Firda;Nama hanya boleh mengandung huruf, titik, spasi, dan tanda petik satu (');send freetext full_name
+4;N;abcdefghijklmnopqrstuvwxyzfirdalagitestingkitabisa abcdefghijklmnopqrstuvwxyzfirdalagitestingkitabisa;08561736527;Automation Firda;Nama lengkap terlalu panjang (maksimal 70 karakter);send more than 70 characters
+5;N;Firda Maryana;;Automation Firda;Silakan isi no. ponsel atau email kamu;send blank phone_or_email
+6;N;Firda Maryana;8561736527;Automation Firda;Silakan isi dengan ketentuan no. ponsel atau email yang benar;send with early number 856
+7;N;Firda Maryana;0857;Automation Firda;Silakan isi dengan ketentuan no. ponsel atau email yang benar;send less than 5 characters phone
+8;N;Firda Maryana;085716768792012345;Automation Firda;Silakan isi dengan ketentuan no. ponsel atau email yang benar;send more than 15 characters phone
+9;N;Firda Maryana;abc123!@#;Automation Firda;Silakan isi dengan ketentuan no. ponsel atau email yang benar;send freetext phone_or_email
+10;N;Firda Maryana;gazaagung@gmail.c;Automation Firda;Silakan isi dengan ketentuan no. ponsel atau email yang benar;send invalid email
+11;N;Firda Maryana;gazaagung@gmail.com.c;Automation Firda;Silakan isi dengan ketentuan no. ponsel atau email yang benar;send invalid email

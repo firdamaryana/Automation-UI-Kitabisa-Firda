@@ -1,0 +1,26 @@
+- Install below for running robot framework
+1. Install python 
+2. Install pipenv.
+3. Install chromedriver (For running web automation on chrome browser). https://chromedriver.chromium.org/downloads
+4. Install geckodriver (For running web automation on firefox browser). https://github.com/mozilla/geckodriver/releases
+5. Library         SeleniumLibrary     timeout=60      run_on_failure=SeleniumLibrary.Capture Page Screenshot
+6. Library         csvLibrary.py
+7. Library         DataDriver
+
+- Note
+1. keyword : specific keyword for each page (web testing)
+2. csv: used to save csv file that contains test cases for testing. Can be repeated or duplicated.
+3. test : while read data from csv, and can add additional test cases if needed.
+4. variable : For web testing, this folder is used for saving web/apps element locator. A web element locator is an object that find and return web elements on a page using a given query. Example: Class name, CSS Selector, ID, Link text, Name, Partial link text, Tag name, XPath.
+
+- Rules
+1. All test cases create using gherkin languange
+2. All test cases create using data driven test
+3. All variables name using naming convention
+
+
+- Running Robot Command
+1. Run Specific Robot File = robot -d ./result <file_path>/<file_name>.robot
+2. Run Robot Specific Tags = robot -d ./result --include tagName <file_path>/<folder_name>
+3. Run Specific Test Case from a Test Suite = robot -d ./result -t "test case name here" <file_path>/<file_name>.robot
+4. Run Robot For Web Automation Testing = robot -d ./result --variable browser:chrome <file_path>/<file_name>.robot

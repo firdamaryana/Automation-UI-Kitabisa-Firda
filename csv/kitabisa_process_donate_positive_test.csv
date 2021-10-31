@@ -1,0 +1,7 @@
+${test_number};${test_type};${full_name};${phone_or_email};${notes_berdoa};${expected_display};${test_desc}
+0;P;Firda Maryana;08561736527;Semoga membawa berkah untuk sesama;;send with early number 0856
+1;P;Firda Maryana;628561736527;Semoga membawa berkah untuk sesama;;send with early number 62856
+2;P;Firda Maryana;6208561736527;Semoga membawa berkah untuk sesama;;send with early number 620856
+3;P;Firda Maryana;+62008561736527;Semoga membawa berkah untuk sesama;;send with early number +620
+4;P;Firda Maryana;+628561736527;Semoga membawa berkah untuk sesama;;send with early number +62
+5;P;Firda Maryana;firda_maryana94@yahoo.com;Semoga membawa berkah untuk sesama;;send valid email
